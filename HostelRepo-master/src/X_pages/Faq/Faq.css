@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header-faq {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .main-faq {
+    margin: 20px;
+  }
+ 
+  .faq-section {
+    margin-bottom: 20px;
+  } 
+  
+  .question {
+    margin: 0;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+  }
+  
+  .answer {
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    /* overflow: hidden; */
+    transition: max-height 0.5s ease;
+  }
+  
+  .answer-dt {
+    margin-top: 10px;
+  }
+  
+  /* Add animation to the question on hover */
+  .question:hover {
+    background-color: #ccc;
+  }
+  
+  /* Animate the answer when it is expanded */
+  .answer.expanded {
+    max-height: 1000px;
+  }
+  

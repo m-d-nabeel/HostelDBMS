@@ -1,0 +1,121 @@
+/* Profile image */
+.profile-header {
+    background: linear-gradient(to bottom, #141414, #333333);
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+}
+
+.profile-image-overlay {
+    opacity: 0.7;
+}
+
+.profile-image-button {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.profile-image:hover .profile-image-overlay {
+    opacity: 0.5;
+}
+
+.profile-image:hover .profile-image-button {
+    opacity: 1;
+}
+
+.profile-image-button button {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.profile-image-button button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.profile-header h1 {
+    font-size: 3rem;
+}
+
+.profile-header p {
+    font-size: 1.5rem;
+}
+
+.profile-header ul li {
+    font-size: 1.25rem;
+}
+/*  */
+
+.profile-page {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.profile-section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section h2 {
+    background: linear-gradient(120deg, #444444, #555555);
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin: 0 0 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-section h2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.profile-section h2:hover::before {
+    left: 100%;
+}
+
+/* Add border and shadow to images */
+.section-1 img {
+    display: block;
+    width: 250px;
+    height: 200px;
+    border-radius: 50%;
+}
+/*  */
+
+.list-group-item {
+    border-radius: 10px;
+    padding: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+.list-group-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item span {
+    font-weight: 500;
+}
+
+.list-group-item i {
+    font-size: 24px;
+    margin-right: 10px;
+}

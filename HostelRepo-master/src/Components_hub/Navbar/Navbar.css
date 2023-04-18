@@ -1,0 +1,16 @@
+.my-nav{
+    background-color: #333333;
+}
+.login-button{
+    color :rgb(255, 255, 255);
+    opacity : 90%;
+}
+.login{
+    border-radius: 0%;
+}
+.login:hover{
+    animation: shake 0.2s ease-in-out forwards;
+}
+.nav-item:hover a {
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}

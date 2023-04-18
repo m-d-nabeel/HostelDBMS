@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.overview {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.overview-card {
+    flex-basis: calc(33.33% - 20px);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.overview-card:hover {
+    transform: scale(1.05);
+}
+
+.card-header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header img {
+    margin-right: 10px;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-body h3 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.orders {
+    margin: 20px;
+}
+
+.orders h2 {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+thead th {
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody td {
+    padding: 10px;
+}
+
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.status.new {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.status.shipped {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.status.delivered {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.status.cancelled {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+
+.view-profile-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    position: relative;
+}
+
+.view-profile-icon:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+.view-profile-icon:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(135deg);
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+/* search button */
+.button-search{
+    height: 30px;
+}
+.form-search{
+    height: 30px;
+}
+
+.btn-dash{
+    color: white;
+    height:fit-content;
+}
